@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Task 2
+
+      Student Name: Jason Tran
+      Date: 9/22/2024
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 1-5</title>
+   <style>
+     body {
+         font-family: Arial, sans-serif;
+         background-color: #F0F0F0;
+      }
+      header {
+         background-color: #4CAF50; 
+         color: white;
+         text-align: center;
+         padding: 1px;
+         font-size: 28px;
+         font-weight: bold;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+         margin: 0px auto 0 auto; 
+         border-top-left-radius: 15px;
+         border-top-right-radius: 15px;
+      }
+      article {
+         background-color: #FDF6E3; 
+         text-align: center;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+         margin: 0 auto 20px auto; 
+         border-bottom-left-radius: 15px;
+         border-bottom-right-radius: 15px;
+         border-top: none;
+      }
+      p {
+         margin: 0;
+         color: black;
+         font-size: 16px;
+         padding: 10px;
+      }
+   </style>
+   <script>
+      // Initialize the reopenDate variable
+      var reopenDate = new Date("January 1, 2024 00:00:00");
+   </script>
+</head>
+
+<body>
+   <header>
+      <h1>Hands-on Project 1-5</h1>
+   </header>
+   <article>
+      <p>We are closed for the holiday and will reopen at midnight tonight.</p>
+      <script>
+         var today = new Date();
+         if (today > reopenDate) {
+            document.write("<p>We are now reopen!</p>");
+         } else {
+            document.write("<p>We will reopen at: " + reopenDate.toLocaleString() + "</p>");
+         }
+      </script>
+   </article>
+</body>
+</html>
