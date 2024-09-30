@@ -3,8 +3,8 @@
       Task 2
 
       Application to create an online calculator
-      Author: 
-      Date:   
+      Author: Jason Tran
+      Date:   9/30/2024
 
       Filename: task2.js
  */
