@@ -8,38 +8,20 @@
 
       Filename: task1_JS.JavaScript
  */
-function FahrenheitToCelsius(degree) {
-    return (degree - 32) / 1.8;
-}
-
-function CelsiusToFahrenheit(degree) {
-    return (degree * 1.8) + 32;
-}
-
-document.getElementById("cValue").oninput = convertCelsiusToFahrenheit;
-document.getElementById("cValue").onblur = convertCelsiusToFahrenheit;
-
-document.getElementById("fValue").oninput = convertFahrenheitToCelsius;
-document.getElementById("fValue").onblur = convertFahrenheitToCelsius;
-
-function convertCelsiusToFahrenheit() {
-    let cDegree = document.getElementById("cValue").value;
-
-    if (cDegree !== '') {
-        let fValue = CelsiusToFahrenheit(parseFloat(cDegree)).toFixed(2);
-        document.getElementById("fValue").value = fValue;
-    } else {
-        document.getElementById("fValue").value = '';
+      function FahrenheitToCelsius(degree) {
+        return (degree - 32) / 1.8;
     }
-}
-
-function convertFahrenheitToCelsius() {
-    let fDegree = document.getElementById("fValue").value;
-
-    if (fDegree !== '') {
-        let cValue = FahrenheitToCelsius(parseFloat(fDegree)).toFixed(2);
-        document.getElementById("cValue").value = cValue;
-    } else {
-        document.getElementById("cValue").value = '';
+    
+    function CelsiusToFahrenheit(degree) {
+        return (degree * 1.8) + 32;
     }
-}
+    
+    document.getElementById("cValue").onchange = function() {
+        let cDegree = document.getElementById("cValue").value;
+        document.getElementById("fValue").value = CelsiusToFahrenheit(parseFloat(cDegree)).toFixed(2);
+    };
+    
+    document.getElementById("fValue").onchange = function() {
+        let fDegree = document.getElementById("fValue").value;
+        document.getElementById("cValue").value = FahrenheitToCelsius(parseFloat(fDegree)).toFixed(2);
+    };
