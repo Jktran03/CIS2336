@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 2336 SU24 Exam 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Exam 1</h1>
+    <table>
+        <tr>
+            <th>CIS 2337</th>
+            <th>CIS 2348</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>John</td>
+        </tr>
+        <tr>
+            <td>Paris</td>
+            <td>Maria</td>
+        </tr>
+        <tr>
+            <td>Ben</td>
+            <td>Trevor</td>
+        </tr>
+        <tr>
+            <td>Soledad</td>
+            <td></td>
+        </tr>
+    </table>
+    <a href="#" onclick="alert_function()">Submit</a>
+</body>
+</html>
